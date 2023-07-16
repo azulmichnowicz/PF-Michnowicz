@@ -1,0 +1,435 @@
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  height: 15vh;
+}
+header .navbar {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  height: 100%;
+}
+header .navbar-collapse {
+  position: relative;
+  z-index: 2;
+}
+header .navbar .logo {
+  max-width: 100%;
+  height: auto;
+}
+
+#main-index {
+  height: 75vh;
+  background-image: url(https://images2.alphacoders.com/711/711694.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#main-index #h1-index {
+  color: black;
+  background-color: rgb(214, 230, 230);
+  font-family: "Bitter", serif;
+  font-weight: 500;
+}
+#main-index #p-index {
+  color: black;
+  background-color: rgb(214, 230, 230);
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+#main-index #boton-index {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e0e2d6;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid rgb(182, 182, 190);
+  text-align: center;
+}
+#main-index #boton-index a {
+  text-decoration: none;
+  color: black;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+}
+
+.container-sobremi {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  background-color: #dad9c2;
+}
+.container-sobremi .left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.container-sobremi .left-section .left-section .image {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-sobremi .left-section .left-section .image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.container-sobremi .right-section {
+  flex: 1;
+  padding: 20px;
+}
+.container-sobremi .right-section .right-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.container-sobremi .right-section .right-section p {
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.container-sobremi .right-section .right-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.main-infoutil {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  background-color: #dad9c2;
+}
+.main-infoutil .container-infoutil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil {
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(150, 156, 131);
+  width: 20%;
+  flex: 1 0 calc(30% - 40px);
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .h2-tarjeta {
+  font-size: 20px;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .p-tarjeta {
+  margin-bottom: 10px;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #9a9c88;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid rgb(182, 182, 190);
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#main-paginas-infoutil {
+  background-color: #dad9c2;
+}
+#main-paginas-infoutil #h1-paginas-infoutil {
+  font-family: "Bitter", serif;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+}
+#main-paginas-infoutil #h2-paginas-infoutil {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 50px 0px 100px 0px;
+}
+#main-paginas-infoutil #main-paginas-infoutil img {
+  display: block;
+  margin: 0 auto;
+}
+#main-paginas-infoutil #h3-paginas-infoutil {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin: 100px 100px 0px 100px;
+}
+#main-paginas-infoutil .p-paginas-infoutil-items {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+  text-decoration: underline;
+  margin: 50px 100px 0px 100px;
+}
+#main-paginas-infoutil .p-paginas-infoutil {
+  margin: 20px 100px 0px 100px;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+#main-lugares {
+  height: 75vh;
+  position: relative;
+  z-index: 1;
+}
+#main-lugares .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background-color: #dad9c2;
+  height: 100%;
+}
+#main-lugares .grid-container #amsterdam {
+  background-image: url(https://images.pexels.com/photos/2856012/pexels-photo-2856012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #bariloche {
+  background-image: url(https://images.pexels.com/photos/13452029/pexels-photo-13452029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #berlin {
+  background-image: url(https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #javea {
+  background-image: url(https://i.pinimg.com/564x/62/44/87/6244877808039f3fa7a159660c945f7c.jpg);
+}
+#main-lugares .grid-container #madrid {
+  background-image: url(https://images.pexels.com/photos/930595/pexels-photo-930595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #praga {
+  background-image: url(https://images.pexels.com/photos/7245230/pexels-photo-7245230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #roma {
+  background-image: url(https://images.pexels.com/photos/3021382/pexels-photo-3021382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container #sofia {
+  background-image: url(https://images.pexels.com/photos/8514532/pexels-photo-8514532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#main-lugares .grid-container .grid-item {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  width: auto;
+}
+#main-lugares .grid-container .grid-item .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+#main-lugares .grid-container .grid-item a {
+  text-decoration: none;
+}
+#main-lugares .grid-container .grid-item .p-ciudades-lugares {
+  color: black;
+  font-family: "Bitter", serif;
+  font-weight: 300;
+  font-size: 40px;
+}
+#main-lugares .grid-container .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-ciudades {
+  background-color: #dad9c2;
+}
+.main-ciudades .h1-ciudades {
+  font-family: "Bitter", serif;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+}
+.main-ciudades .h2-ciudades {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+.main-ciudades .p-ciudades {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 100px 50px 100px;
+}
+.main-ciudades .img-ciudades {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.main-ciudades .p-azul-ciudades {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 100px 0px 100px;
+}
+
+#main-contacto {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(https://images6.alphacoders.com/546/546393.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#main-contacto #h1-contacto {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+#main-contacto .formulario {
+  display: grid;
+  gap: 20px;
+}
+#main-contacto .formulario .categoria-formulario {
+  display: grid;
+  gap: 5px;
+}
+#main-contacto .formulario .categoria-formulario label {
+  font-weight: bold;
+  background-color: #9a9c88;
+  color: white;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+#main-contacto .formulario .categoria-formulario input::placeholder,
+#main-contacto .formulario .categoria-formulario textarea::placeholder {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+#main-contacto .formulario .categoria-formulario input {
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  width: 500px;
+}
+#main-contacto .formulario .categoria-formulario textarea {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  width: 500px;
+}
+#main-contacto .formulario .enviar {
+  display: flex;
+  justify-content: center;
+}
+#main-contacto .formulario .enviar button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #8a8864;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+}
+
+footer {
+  height: 10vh;
+  background-color: rgb(179, 165, 149);
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+footer .footer-container .redes-sociales {
+  display: flex;
+  gap: 10px;
+}
+footer .footer-container .redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+footer .footer-container .copyright {
+  text-align: center;
+  flex: 1;
+  margin: 0;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
