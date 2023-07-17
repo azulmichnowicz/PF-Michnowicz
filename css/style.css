@@ -1,3 +1,9 @@
+.flex-center, #main-lugares .grid-container .grid-item .content, .container-sobremi .left-section .image, .container-sobremi .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilos generales */
 * {
   padding: 0;
@@ -13,8 +19,9 @@ header {
   height: 15vh;
 }
 header .navbar {
-  font-family: "Bitter", serif;
   font-weight: 500;
+  font-size: 15px;
+  font-family: "Bitter", serif;
   height: 100%;
 }
 header .navbar-collapse {
@@ -25,6 +32,11 @@ header .navbar .logo {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 1000px) {
+  header .navbar .logo {
+    max-width: 50%;
+  }
+}
 
 #main-index {
   height: 75vh;
@@ -34,57 +46,57 @@ header .navbar .logo {
   background-size: cover;
 }
 #main-index #h1-index {
-  color: black;
-  background-color: rgb(214, 230, 230);
-  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(241, 229, 236);
   font-weight: 500;
+  font-size: 40px;
+  font-family: "Bitter", serif;
 }
 #main-index #p-index {
-  color: black;
-  background-color: rgb(214, 230, 230);
-  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(241, 229, 236);
   font-weight: 400;
   font-size: 25px;
+  font-family: "Bitter", serif;
 }
 #main-index #boton-index {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #e0e2d6;
-  color: rgb(5, 5, 5);
+  background-color: rgb(241, 229, 236);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 3px;
-  border: 1px solid rgb(182, 182, 190);
+  border: 1px solid;
+  border-color: rgb(0, 0, 0);
   text-align: center;
 }
 #main-index #boton-index a {
   text-decoration: none;
-  color: black;
-  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
   font-weight: 400;
+  font-size: 20px;
+  font-family: "Bitter", serif;
+}
+
+.main-sobre-mi {
+  padding: 20px;
 }
 
 .container-sobremi {
   display: flex;
-  padding: 20px;
   align-items: flex-start;
-  background-color: #dad9c2;
+  background-color: rgb(241, 229, 236);
 }
 .container-sobremi .left-section {
   flex: 1;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  align-items: center;
 }
-.container-sobremi .left-section .left-section .image {
+.container-sobremi .left-section .image {
   width: 100%;
   height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.container-sobremi .left-section .left-section .image img {
+.container-sobremi .left-section .image img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -93,40 +105,48 @@ header .navbar .logo {
   flex: 1;
   padding: 20px;
 }
-.container-sobremi .right-section .right-section h1 {
-  font-size: 24px;
+.container-sobremi .right-section h1, .container-sobremi .right-section h2 {
   margin-bottom: 10px;
   text-align: center;
-  font-family: "Bitter", serif;
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-family: "Bitter", serif;
 }
-.container-sobremi .right-section .right-section p {
-  font-size: 16px;
+.container-sobremi .right-section p {
   text-align: justify;
-  font-family: "Bitter", serif;
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: "Bitter", serif;
 }
-.container-sobremi .right-section .right-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-family: "Bitter", serif;
-  font-weight: 500;
+.container-sobremi .right-section #h1-sobremi {
   color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Bitter", serif;
+}
+.container-sobremi .right-section #h2-sobremi {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Bitter", serif;
+}
+.container-sobremi .right-section .p-sobremi {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Bitter", serif;
 }
 
 .main-infoutil {
   height: 75vh;
   display: flex;
   justify-content: center;
-  background-color: #dad9c2;
+  background-color: rgb(241, 229, 236);
 }
 .main-infoutil .container-infoutil {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil {
   border-radius: 5px;
@@ -134,7 +154,7 @@ header .navbar .logo {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(150, 156, 131);
+  border: 1px solid rgb(0, 0, 0);
   width: 20%;
   flex: 1 0 calc(30% - 40px);
 }
@@ -150,77 +170,105 @@ header .navbar .logo {
   justify-content: space-between;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .h2-tarjeta {
-  font-size: 20px;
-  font-family: "Bitter", serif;
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
+  font-family: "Bitter", serif;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .p-tarjeta {
   margin-bottom: 10px;
-  font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 15px;
+  font-family: "Bitter", serif;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #9a9c88;
+  background-color: rgb(241, 229, 236);
   color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 3px;
-  border: 1px solid rgb(182, 182, 190);
+  border: 1.5px solid;
+  border-color: rgb(0, 0, 0);
   text-align: center;
-  font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 15px;
+  font-family: "Bitter", serif;
+}
+@media (max-width: 767px) {
+  .main-infoutil .container-infoutil {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-infoutil .main-infoutil {
+    height: auto;
+  }
+  .main-infoutil .tarjeta-infoutil {
+    flex: 1 0 calc(90% - 40px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-infoutil .container-infoutil {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .main-infoutil .tarjeta-infoutil {
+    flex: 1 0 calc(40% - 40px);
+    align-self: stretch;
+  }
+  .main-infoutil .main-infoutil {
+    height: auto;
+  }
 }
 
 #main-paginas-infoutil {
   background-color: #dad9c2;
 }
 #main-paginas-infoutil #h1-paginas-infoutil {
-  font-family: "Bitter", serif;
-  font-weight: 800;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  font-family: "Bitter", serif;
 }
 #main-paginas-infoutil #h2-paginas-infoutil {
-  font-family: "Bitter", serif;
-  font-weight: 700;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin: 50px 0px 100px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Bitter", serif;
 }
 #main-paginas-infoutil #main-paginas-infoutil img {
   display: block;
   margin: 0 auto;
 }
 #main-paginas-infoutil #h3-paginas-infoutil {
-  font-family: "Bitter", serif;
-  font-weight: 500;
-  color: black;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   margin: 100px 100px 0px 100px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Bitter", serif;
 }
 #main-paginas-infoutil .p-paginas-infoutil-items {
-  font-family: "Bitter", serif;
-  font-weight: 500;
-  color: black;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   text-decoration: underline;
   margin: 50px 100px 0px 100px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Bitter", serif;
 }
 #main-paginas-infoutil .p-paginas-infoutil {
   margin: 20px 100px 0px 100px;
-  font-family: "Bitter", serif;
-  font-weight: 500;
-  color: black;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Bitter", serif;
 }
 
 #main-lugares {
@@ -232,7 +280,7 @@ header .navbar .logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  background-color: #dad9c2;
+  background-color: rgb(241, 229, 236);
   height: 100%;
 }
 #main-lugares .grid-container #amsterdam {
@@ -266,8 +314,6 @@ header .navbar .logo {
   overflow: hidden;
   display: block;
   text-decoration: none;
-  font-family: "Bitter", serif;
-  font-weight: 500;
   background-size: cover;
   background-position: center;
   height: 30vh;
@@ -279,49 +325,61 @@ header .navbar .logo {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
 }
 #main-lugares .grid-container .grid-item a {
   text-decoration: none;
 }
 #main-lugares .grid-container .grid-item .p-ciudades-lugares {
-  color: black;
-  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
   font-weight: 300;
   font-size: 40px;
+  font-family: "Bitter", serif;
 }
 #main-lugares .grid-container .grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  #main-lugares .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  #main-lugares .grid-item {
+    height: 50vh;
+    width: 100%;
+  }
+  #main-lugares #main-lugares {
+    height: auto;
+  }
+}
 
 .main-ciudades {
   background-color: #dad9c2;
 }
 .main-ciudades .h1-ciudades {
-  font-family: "Bitter", serif;
-  font-weight: 800;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  font-family: "Bitter", serif;
 }
 .main-ciudades .h2-ciudades {
-  font-family: "Bitter", serif;
   font-weight: 700;
-  color: black;
+  font-size: 35px;
+  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin: 50px 0px 50px 0px;
 }
 .main-ciudades .p-ciudades {
-  font-family: "Bitter", serif;
-  font-weight: 500;
-  color: black;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   margin: 0px 100px 50px 100px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Bitter", serif;
 }
 .main-ciudades .img-ciudades {
   display: block;
@@ -329,12 +387,12 @@ header .navbar .logo {
   margin-bottom: 50px;
 }
 .main-ciudades .p-azul-ciudades {
-  font-family: "Bitter", serif;
-  font-weight: 500;
-  color: black;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   margin: 0px 100px 0px 100px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Bitter", serif;
 }
 
 #main-contacto {
@@ -349,9 +407,9 @@ header .navbar .logo {
 #main-contacto #h1-contacto {
   margin-bottom: 20px;
   color: rgb(0, 0, 0);
-  font-family: "Bitter", serif;
   font-weight: 500;
   font-size: 40px;
+  font-family: "Bitter", serif;
 }
 #main-contacto .formulario {
   display: grid;
@@ -362,18 +420,17 @@ header .navbar .logo {
   gap: 5px;
 }
 #main-contacto .formulario .categoria-formulario label {
-  font-weight: bold;
-  background-color: #9a9c88;
-  color: white;
-  font-family: "Bitter", serif;
+  background-color: #95bd94;
+  color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 20px;
+  font-family: "Bitter", serif;
 }
 #main-contacto .formulario .categoria-formulario input::placeholder,
 #main-contacto .formulario .categoria-formulario textarea::placeholder {
-  font-family: "Bitter", serif;
   font-weight: 500;
   font-size: 15px;
+  font-family: "Bitter", serif;
 }
 #main-contacto .formulario .categoria-formulario input {
   padding: 10px;
@@ -393,15 +450,14 @@ header .navbar .logo {
 }
 #main-contacto .formulario .enviar button {
   padding: 10px 20px;
-  color: white;
-  background-color: #8a8864;
-  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #95bd94;
   border-radius: 5px;
   cursor: pointer;
   padding: 15px 30px;
+  font-weight: 500;
   font-size: 20px;
   font-family: "Bitter", serif;
-  font-weight: 500;
 }
 
 footer {
@@ -427,9 +483,14 @@ footer .footer-container .copyright {
   text-align: center;
   flex: 1;
   margin: 0;
-  font-family: "Bitter", serif;
   font-weight: 500;
   font-size: 15px;
+  font-family: "Bitter", serif;
+}
+@media screen and (max-width: 767px) {
+  footer .footer-texto p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

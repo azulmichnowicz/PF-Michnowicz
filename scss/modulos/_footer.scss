@@ -19,9 +19,12 @@ footer {
             text-align: center;
             flex: 1;
             margin: 0;
-            font-family: 'Bitter', serif;
-            font-weight: 500;
-            font-size: 15px;
+            @include fuentes(500, 15px, $bitter);
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .footer-texto p {
+            font-size: 12px;
         }
     }
 }

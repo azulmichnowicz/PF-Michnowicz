@@ -1,0 +1,24 @@
+//Variables y mixin de flexbox y display//
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+// Variables y mixin de fuentes//
+
+$bitter: 'Bitter', serif;
+@mixin fuentes($weight, $size, $family) {
+    font-weight: $weight;
+    font-size: $size;
+    font-family: $family;
+}
+
+//variables paleta de colores//
+$color-principal: rgb(0, 0, 0);
+$color-fondo: rgb(241, 229, 236);
+$color-fondo-contacto: #95bd94;
