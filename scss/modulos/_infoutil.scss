@@ -1,4 +1,5 @@
 .main-infoutil {
+    padding-top: 20px;
     height: 75vh;
     @include display(flex, center);
     background-color: $color-fondo;
