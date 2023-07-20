@@ -7,12 +7,12 @@
     #h1-index {
         color: $color-principal;
         background-color: $color-fondo;
-        @include fuentes(500, 40px, $bitter);
+        @include fuentes(500, 50px, $bitter);
     }
     #p-index {
         color: $color-principal;
         background-color: $color-fondo;
-        @include fuentes(400, 25px, $bitter);
+        @include fuentes(400, 30px, $bitter);
     }
     #boton-index {
         display: inline-block;

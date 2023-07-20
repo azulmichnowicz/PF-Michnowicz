@@ -1,9 +1,10 @@
 .main-ciudades {
-    background-color: #dad9c2;
+    background-color: $color-fondo-paginas;
+    padding: 100px 150px 100px 150px;
     .h1-ciudades {
         color: rgb(0, 0, 0);
         text-align: center;
-        @include fuentes(800, 40px, $bitter);
+        @include fuentes(700, 50px, $bitter);
     }
     .h2-ciudades {
         @include fuentes(700, 35px, $bitter);
@@ -11,10 +12,17 @@
         text-align: center;
         margin: 50px 0px 50px 0px;
     }
+    .video-paginas {
+        max-width: 800px;
+        margin: 40px auto;
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
     .p-ciudades {
         color: rgb(0, 0, 0);
         text-align: justify;
-        margin: 0px 100px 50px 100px;
         @include fuentes(500, 18px, $bitter);
     }
     .img-ciudades {
@@ -27,5 +35,27 @@
         text-align: justify;
         margin: 0px 100px 0px 100px;
         @include fuentes(500, 18px, $bitter);
+    }
+}
+@media (max-width: 767px) {
+    .main-ciudades {
+        padding: 0 20px 0 20px;
+        .h1-ciudades {
+            @include fuentes(600, 30px, $bitter);
+        }
+        .h2-ciudades {
+            @include fuentes(600, 22px, $bitter);
+        }
+        .p-ciudades {
+            @include fuentes(400, 13px, $bitter);
+        }
+        .img-ciudades {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+        .p-azul-ciudades {
+            @include fuentes(400, 13px, $bitter);
+        }
     }
 }

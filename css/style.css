@@ -1,4 +1,4 @@
-.flex-center, #main-lugares .grid-container .grid-item .content, .container-sobremi .left-section .image, .container-sobremi .left-section {
+.flex-center, #main-lugares .grid-container .grid-item .content, .main-infoutil, .main-sobre-mi .container-sobremi .left-section .image, .main-sobre-mi .container-sobremi .left-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,23 +38,6 @@ header .navbar .logo {
   }
 }
 
-.main-breadcrumb {
-  margin: 0px 50px 0px 50px;
-  padding-top: 20px;
-}
-.main-breadcrumb .breadcrumb {
-  background-color: rgb(241, 229, 236);
-}
-.main-breadcrumb .breadcrumb-item {
-  font-weight: 500;
-  font-size: 17px;
-  font-family: "Bitter", serif;
-}
-.main-breadcrumb .breadcrumb-item a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
 #main-index {
   height: 75vh;
   background-image: url(https://images2.alphacoders.com/711/711694.jpg);
@@ -64,22 +47,22 @@ header .navbar .logo {
 }
 #main-index #h1-index {
   color: rgb(0, 0, 0);
-  background-color: rgb(241, 229, 236);
+  background-color: rgb(156, 168, 100);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Bitter", serif;
 }
 #main-index #p-index {
   color: rgb(0, 0, 0);
-  background-color: rgb(241, 229, 236);
+  background-color: rgb(156, 168, 100);
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Bitter", serif;
 }
 #main-index #boton-index {
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgb(241, 229, 236);
+  background-color: rgb(156, 168, 100);
   color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 3px;
@@ -96,203 +79,273 @@ header .navbar .logo {
 }
 
 .main-sobre-mi {
-  padding: 20px;
+  background-color: rgb(156, 168, 100);
+  padding: 80px 100px 70px 0px;
 }
-
-.container-sobremi {
+.main-sobre-mi #h1-sobremi {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 50px;
+  font-family: "Bitter", serif;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.main-sobre-mi .container-sobremi {
   display: flex;
   align-items: flex-start;
-  background-color: rgb(241, 229, 236);
 }
-.container-sobremi .left-section {
+.main-sobre-mi .container-sobremi .left-section {
   flex: 1;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
-.container-sobremi .left-section .image {
+.main-sobre-mi .container-sobremi .left-section .image {
   width: 100%;
-  height: 500px;
+  height: 480px;
+  margin-top: 50px;
 }
-.container-sobremi .left-section .image img {
+.main-sobre-mi .container-sobremi .left-section .image img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
-.container-sobremi .right-section {
+.main-sobre-mi .container-sobremi .right-section {
   flex: 1;
   padding: 20px;
 }
-.container-sobremi .right-section h1, .container-sobremi .right-section h2 {
-  margin-bottom: 10px;
-  text-align: center;
+.main-sobre-mi .container-sobremi .right-section .p-sobremi {
+  color: rgb(0, 0, 0);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Bitter", serif;
-}
-.container-sobremi .right-section p {
   text-align: justify;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Bitter", serif;
 }
-.container-sobremi .right-section #h1-sobremi {
+.main-sobre-mi .container-sobremi .right-section #h2-sobremi {
   color: rgb(0, 0, 0);
   font-weight: 500;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Bitter", serif;
-}
-.container-sobremi .right-section #h2-sobremi {
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  font-size: 30px;
-  font-family: "Bitter", serif;
-}
-.container-sobremi .right-section .p-sobremi {
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Bitter", serif;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .container-sobremi {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .left-section, .right-section {
+    flex: 100%;
+  }
+  .right-section {
+    padding: 0;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  #h1-sobremi {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container-sobremi .left-section .image {
+    max-width: 100%;
+  }
+}
 .main-infoutil {
-  padding-top: 20px;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(241, 229, 236);
+  flex-direction: column;
+  background-color: rgb(156, 168, 100);
+  height: auto;
+}
+.main-infoutil .h1-infoutil {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 50px;
+  font-family: "Bitter", serif;
+  text-align: center;
+  margin-top: 60px;
 }
 .main-infoutil .container-infoutil {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
+  padding-bottom: 90px;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil {
   border-radius: 5px;
-  margin: 20px;
-  padding: 10px;
+  margin: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(0, 0, 0);
-  width: 20%;
-  flex: 1 0 calc(30% - 40px);
+  border: 2px solid rgb(0, 0, 0);
+  flex: 1 0 calc(45% - 40px);
+  align-self: stretch;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-img {
-  width: 100%;
-  height: auto;
   border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal {
   flex: 1;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: space-between;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .h2-tarjeta {
   text-align: center;
-  font-weight: 500;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 22px;
   font-family: "Bitter", serif;
+  font-weight: bold;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .p-tarjeta {
   margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 15px;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 18px;
   font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgb(241, 229, 236);
+  background-color: rgb(156, 168, 100);
   color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 3px;
-  border: 1.5px solid;
-  border-color: rgb(0, 0, 0);
+  border: 2px solid;
   text-align: center;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 18px;
   font-family: "Bitter", serif;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 499px) {
   .main-infoutil .container-infoutil {
     justify-content: flex-start;
     align-items: center;
   }
-  .main-infoutil .main-infoutil {
-    height: auto;
-  }
-  .main-infoutil .tarjeta-infoutil {
+  .main-infoutil .container-infoutil .tarjeta-infoutil {
     flex: 1 0 calc(90% - 40px);
   }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .main-infoutil .container-infoutil {
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .h2-tarjeta {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Bitter", serif;
   }
-  .main-infoutil .tarjeta-infoutil {
-    flex: 1 0 calc(40% - 40px);
-    align-self: stretch;
-  }
-  .main-infoutil .main-infoutil {
-    height: auto;
+  .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .p-tarjeta,
+  .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Bitter", serif;
   }
 }
-
 #main-paginas-infoutil {
-  background-color: #dad9c2;
+  background-color: rgb(177, 192, 137);
+  padding: 100px 150px 100px 150px;
+  box-sizing: border-box;
 }
 #main-paginas-infoutil #h1-paginas-infoutil {
   color: rgb(0, 0, 0);
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   font-family: "Bitter", serif;
+  margin-bottom: 20px;
 }
 #main-paginas-infoutil #h2-paginas-infoutil {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin: 50px 0px 100px 0px;
   font-weight: 700;
   font-size: 30px;
   font-family: "Bitter", serif;
 }
-#main-paginas-infoutil #main-paginas-infoutil img {
-  display: block;
-  margin: 0 auto;
-}
 #main-paginas-infoutil #h3-paginas-infoutil {
   color: rgb(0, 0, 0);
   text-align: justify;
-  margin: 100px 100px 0px 100px;
+  margin: 20px 0px;
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
 }
+#main-paginas-infoutil .video-paginas {
+  max-width: 800px;
+  margin: 40px auto;
+}
+#main-paginas-infoutil .video-paginas video {
+  width: 100%;
+  height: auto;
+}
 #main-paginas-infoutil .p-paginas-infoutil-items {
   color: rgb(0, 0, 0);
-  text-align: justify;
+  text-align: left;
   text-decoration: underline;
-  margin: 50px 100px 0px 100px;
+  margin: 20px 0px;
   font-weight: 500;
   font-size: 20px;
   font-family: "Bitter", serif;
 }
+#main-paginas-infoutil img {
+  display: block;
+  margin: 0 auto;
+}
 #main-paginas-infoutil .p-paginas-infoutil {
-  margin: 20px 100px 0px 100px;
   color: rgb(0, 0, 0);
   text-align: justify;
   text-decoration: none;
+  margin: 20px 0px;
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
 }
 
+@media (max-width: 767px) {
+  #main-paginas-infoutil {
+    padding: 0 20px 0 20px;
+  }
+  #main-paginas-infoutil #h1-paginas-infoutil {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
+  #main-paginas-infoutil #h2-paginas-infoutil {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "Bitter", serif;
+  }
+  #main-paginas-infoutil #h3-paginas-infoutil {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Bitter", serif;
+  }
+  #main-paginas-infoutil .p-paginas-infoutil-items {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Bitter", serif;
+  }
+  #main-paginas-infoutil .p-paginas-infoutil {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Bitter", serif;
+  }
+  #main-paginas-infoutil img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
 #main-lugares {
   position: relative;
   z-index: 1;
-  background-color: rgb(241, 229, 236);
+  background-color: rgb(156, 168, 100);
+  padding: 70px 50px 50px 50px;
 }
 #main-lugares #h1-lugares {
   color: rgb(0, 0, 0);
@@ -304,7 +357,7 @@ header .navbar .logo {
 }
 #main-lugares .grid-container {
   margin: 0px 50px 0px 50px;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -368,28 +421,31 @@ header .navbar .logo {
   height: 100%;
   object-fit: cover;
 }
+
 @media (max-width: 768px) {
+  #main-lugares {
+    padding: 0;
+    height: auto;
+  }
   #main-lugares .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    margin: 0 20px 0 20px;
   }
   #main-lugares .grid-item {
     height: 50vh;
     width: 100%;
   }
-  #main-lugares #main-lugares {
-    height: auto;
-  }
 }
-
 .main-ciudades {
-  background-color: #dad9c2;
+  background-color: rgb(177, 192, 137);
+  padding: 100px 150px 100px 150px;
 }
 .main-ciudades .h1-ciudades {
   color: rgb(0, 0, 0);
   text-align: center;
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 50px;
   font-family: "Bitter", serif;
 }
 .main-ciudades .h2-ciudades {
@@ -400,10 +456,17 @@ header .navbar .logo {
   text-align: center;
   margin: 50px 0px 50px 0px;
 }
+.main-ciudades .video-paginas {
+  max-width: 800px;
+  margin: 40px auto;
+}
+.main-ciudades .video-paginas video {
+  width: 100%;
+  height: auto;
+}
 .main-ciudades .p-ciudades {
   color: rgb(0, 0, 0);
   text-align: justify;
-  margin: 0px 100px 50px 100px;
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
@@ -422,26 +485,63 @@ header .navbar .logo {
   font-family: "Bitter", serif;
 }
 
+@media (max-width: 767px) {
+  .main-ciudades {
+    padding: 0 20px 0 20px;
+  }
+  .main-ciudades .h1-ciudades {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
+  .main-ciudades .h2-ciudades {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "Bitter", serif;
+  }
+  .main-ciudades .p-ciudades {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: "Bitter", serif;
+  }
+  .main-ciudades .img-ciudades {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .main-ciudades .p-azul-ciudades {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: "Bitter", serif;
+  }
+}
 #main-contacto {
-  padding: 20px;
+  padding: 20px 20px 80px 20px;
   display: grid;
   place-items: center;
-  height: 100vh;
   background-image: url(https://images6.alphacoders.com/546/546393.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #main-contacto #h1-contacto {
-  margin-bottom: 20px;
+  padding: 50px 0px 50px 0px;
   color: rgb(0, 0, 0);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Bitter", serif;
+}
+@media (max-width: 767px) {
+  #main-contacto #h1-contacto {
+    font-size: 30px;
+  }
 }
 #main-contacto .formulario {
   display: grid;
   gap: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 90px;
 }
 #main-contacto .formulario .categoria-formulario {
   display: grid;
@@ -462,32 +562,38 @@ header .navbar .logo {
 }
 #main-contacto .formulario .categoria-formulario input {
   padding: 10px;
-  width: 100%;
   height: 60px;
-  width: 500px;
 }
 #main-contacto .formulario .categoria-formulario textarea {
   padding: 10px;
   width: 100%;
   height: 150px;
-  width: 500px;
 }
 #main-contacto .formulario .enviar {
   display: flex;
   justify-content: center;
 }
 #main-contacto .formulario .enviar button {
-  padding: 10px 20px;
   color: rgb(0, 0, 0);
   background-color: #95bd94;
   border-radius: 5px;
   cursor: pointer;
-  padding: 15px 30px;
   font-weight: 500;
   font-size: 20px;
   font-family: "Bitter", serif;
+  padding: 15px 30px;
 }
 
+@media (max-width: 767px) {
+  #h1-contacto {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "Bitter", serif;
+  }
+  #main-contacto {
+    padding: 10px;
+  }
+}
 footer {
   height: 10vh;
   background-color: rgb(179, 165, 149);

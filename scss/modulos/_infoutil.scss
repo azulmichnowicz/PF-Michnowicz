@@ -1,37 +1,52 @@
 .main-infoutil {
-    padding-top: 20px;
-    height: 75vh;
-    @include display(flex, center);
+    @extend .flex-center;
+    flex-direction: column;
     background-color: $color-fondo;
+    height: auto;
+    .h1-infoutil {
+        color: $color-principal;
+        @include fuentes(500, 50px, $bitter);
+        text-align: center;
+        margin-top: 60px
+    }
     .container-infoutil {
         @include display(flex, center);
+        justify-content: space-between;
+        align-items: flex-start;
         flex-wrap: wrap;
+        padding-bottom: 90px;
         .tarjeta-infoutil {
             border-radius: 5px;
-            margin: 20px;
-            padding: 10px;
+            margin: 40px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            border: 1px solid $color-principal;
-            width: 20%;
-            flex: 1 0 calc(30% - 40px);
+            border: 2px solid $color-principal;
+            flex: 1 0 calc(45% - 40px);
+            align-self: stretch;
             .tarjeta-img {
-                width: 100%;
-                height: auto;
                 border-radius: 5px 5px 0 0;
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
             }
             .tarjeta-principal {
                 flex: 1;
-                display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                @include display(flex, space-between);
                 .h2-tarjeta {
                     text-align: center;
-                    @include fuentes(500, 20px, $bitter);
+                    color: $color-principal;
+                    @include fuentes(400, 22px, $bitter);
+                    font-weight: bold;
                 }
                 .p-tarjeta {
                     margin-bottom: 10px;
-                    @include fuentes(400, 15px, $bitter);
+                    text-align: justify;
+                    @include fuentes(500, 18px, $bitter);
+                    color: $color-principal;
                 }
                 .boton-personalizado {
                     display: inline-block;
@@ -40,45 +55,31 @@
                     color: $color-principal;
                     text-decoration: none;
                     border-radius: 3px;
-                    border: 1.5px solid;
-                    border-color: $color-principal;
+                    border: 2px solid;
                     text-align: center;
+                    @include fuentes(500, 18px, $bitter);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 499px) {
+.main-infoutil {
+    .container-infoutil {
+        justify-content: flex-start;
+        align-items: center;
+        .tarjeta-infoutil {
+            flex: 1 0 calc(90% - 40px);
+            .tarjeta-principal {
+                .h2-tarjeta {
+                    @include fuentes(400, 18px, $bitter);
+                }
+                .p-tarjeta,
+                .boton-personalizado {
                     @include fuentes(400, 15px, $bitter);
                 }
             }
         }
     }
-    @media (max-width: 767px) {
-        .container-infoutil {
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .main-infoutil {
-            height: auto;
-        }
-        .tarjeta-infoutil {
-            flex: 1 0 calc(90% - 40px);
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1199px) {
-        .container-infoutil {
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-        .tarjeta-infoutil {
-            flex: 1 0 calc(40% - 40px);
-            align-self: stretch;
-        }
-        .main-infoutil {
-            height: auto;
-        }
-    }
 }
-
-
-
-
-
-
-
+}

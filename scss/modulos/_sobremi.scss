@@ -1,49 +1,79 @@
 .main-sobre-mi {
-    padding: 20px;
-}
-.container-sobremi {
-    display: flex;
-    align-items: flex-start;
     background-color: $color-fondo;
-    .left-section {
-        flex: 1;
-        @extend .flex-center;
-        flex-direction: column;
-        gap: 20px;
-        .image {
-            width: 100%;
-            height: 500px;
+    padding: 80px 100px 70px 0px;
+    #h1-sobremi {
+        color: $color-principal;
+        @include fuentes(500, 50px, $bitter);
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .container-sobremi {
+        display: flex;
+        align-items: flex-start;
+        .left-section {
+            flex: 1;
             @extend .flex-center;
-            img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover;
+            flex-direction: column;
+            gap: 5px;
+            .image {
+                width: 100%;
+                height: 480px;
+                @extend .flex-center;
+                margin-top: 50px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .right-section {
+            flex: 1;
+            padding: 20px;
+            .p-sobremi {
+                color: $color-principal;
+                @include fuentes(500, 16px, $bitter);
+                text-align: justify;
+            }
+            #h2-sobremi {
+                color: $color-principal;
+                @include fuentes(500, 40px, $bitter);
+                text-align: center;
             }
         }
     }
-    .right-section {
-        flex: 1;
-        padding: 20px;
-        h1, h2 {
-            margin-bottom: 10px;
-            text-align: center;
-            @include fuentes(500, 24px, $bitter);
-        }
-        p {
-            text-align: justify;
-            @include fuentes(500, 16px, $bitter);
-        }
-        #h1-sobremi {
-            color: $color-principal;
-            @include fuentes(500, 30px, $bitter);
-        }
-        #h2-sobremi {
-            color: $color-principal;
-            @include fuentes(500, 30px, $bitter);
-        }
-        .p-sobremi {
-            color: $color-principal;
-            @include fuentes(500, 16px, $bitter);
-        }
-    }
 }
+@media (max-width: 768px) {
+    .container-sobremi {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .left-section, .right-section {
+      flex: 100%;
+    }
+
+    .right-section {
+      padding: 0;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #h1-sobremi {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .container-sobremi {
+      .left-section {
+        .image {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+

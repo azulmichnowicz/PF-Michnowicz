@@ -2,6 +2,7 @@
     position: relative;
     z-index: 1;
     background-color: $color-fondo;
+    padding: 70px 50px 50px 50px;
     #h1-lugares {
         color: $color-principal;
         @include fuentes(500, 50px, $bitter);
@@ -10,7 +11,7 @@
     }
     .grid-container {
         margin: 0px 50px 0px 50px;
-        padding-bottom: 70px;
+        padding-bottom: 90px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
@@ -73,17 +74,19 @@
             }
         }
     }
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    #main-lugares {
+        padding: 0;
+        height: auto;
         .grid-container {
             grid-template-columns: 1fr;
             grid-gap: 10px;
+            margin: 0 20px 0 20px;
         }
         .grid-item {
             height: 50vh;
             width: 100%;
-        }
-        #main-lugares {
-            height: auto;
         }
     }
 }

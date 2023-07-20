@@ -1,39 +1,73 @@
 #main-paginas-infoutil {
-    background-color: #dad9c2;
+    background-color: $color-fondo-paginas;
+    padding: 100px 150px 100px 150px;
+    box-sizing: border-box;
     #h1-paginas-infoutil {
         color: rgb(0, 0, 0);
         text-align: center;
-        @include fuentes(800, 40px, $bitter);
-        }
-    #h2-paginas-infoutil {
-        color:rgb(0, 0, 0);
-        text-align: center;
-        margin: 50px 0px 100px 0px;
-        @include fuentes(700, 30px, $bitter);
+        @include fuentes(700, 40px, $bitter);
+        margin-bottom: 20px;
     }
-    #main-paginas-infoutil img {
-        display: block;
-        margin: 0 auto;
+    #h2-paginas-infoutil {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        @include fuentes(700, 30px, $bitter);
     }
     #h3-paginas-infoutil {
         color: rgb(0, 0, 0);
         text-align: justify;
-        margin: 100px 100px 0px 100px;
+        margin: 20px 0px;
         @include fuentes(500, 18px, $bitter);
+    }
+    .video-paginas {
+        max-width: 800px;
+        margin: 40px auto;
+        video {
+            width: 100%;
+            height: auto;
+        }
     }
     .p-paginas-infoutil-items {
         color: rgb(0, 0, 0);
-        text-align: justify;
+        text-align: left;
         text-decoration: underline;
-        margin: 50px 100px 0px 100px;
+        margin: 20px 0px;
         @include fuentes(500, 20px, $bitter);
     }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
     .p-paginas-infoutil {
-        margin: 20px 100px 0px 100px;
         color: rgb(0, 0, 0);
         text-align: justify;
         text-decoration: none;
+        margin: 20px 0px;
         @include fuentes(500, 18px, $bitter);
     }
 }
-
+@media (max-width: 767px) {
+    #main-paginas-infoutil {
+        padding: 0 20px 0 20px;
+        #h1-paginas-infoutil {
+            @include fuentes(600, 30px, $bitter);
+        }
+        #h2-paginas-infoutil {
+            @include fuentes(600, 22px, $bitter);
+        }
+        #h3-paginas-infoutil {
+            @include fuentes(400, 15px, $bitter);
+        }
+        .p-paginas-infoutil-items {
+            @include fuentes(400, 16px, $bitter);
+        }
+        .p-paginas-infoutil {
+            @include fuentes(400, 15px, $bitter);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+    }
+}
