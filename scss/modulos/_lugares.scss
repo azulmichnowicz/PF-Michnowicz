@@ -1,7 +1,7 @@
 #main-lugares {
+    background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
     position: relative;
     z-index: 1;
-    background-color: $color-fondo;
     padding: 70px 50px 50px 50px;
     #h1-lugares {
         color: $color-principal;
@@ -16,6 +16,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         height: 100%;
+        overflow: hidden;
         #amsterdam {
             background-image: url(https://images.pexels.com/photos/2856012/pexels-photo-2856012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         }
@@ -51,6 +52,11 @@
             background-position: center;
             height: 30vh;
             width: auto;
+            transition: transform 0.5s ease;
+            border: 5px solid transparent;
+            &:hover {
+                transform: scale(1.1)
+            }
             .content {
                 @extend .flex-center;
                 position: absolute;
@@ -79,6 +85,10 @@
     #main-lugares {
         padding: 0;
         height: auto;
+        #h1-lugares {
+            margin-bottom: 40px;
+            @include fuentes(500, 30px, $bitter);
+            }
         .grid-container {
             grid-template-columns: 1fr;
             grid-gap: 10px;

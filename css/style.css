@@ -47,39 +47,65 @@ header .navbar .logo {
 }
 #main-index #h1-index {
   color: rgb(0, 0, 0);
-  background-color: rgb(156, 168, 100);
+  background: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   font-weight: 500;
   font-size: 50px;
   font-family: "Bitter", serif;
 }
+@media (max-width: 768px) {
+  #main-index #h1-index {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
+}
 #main-index #p-index {
   color: rgb(0, 0, 0);
-  background-color: rgb(156, 168, 100);
+  background: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   font-weight: 400;
   font-size: 30px;
   font-family: "Bitter", serif;
 }
+@media (max-width: 768px) {
+  #main-index #p-index {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Bitter", serif;
+  }
+}
 #main-index #boton-index {
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgb(156, 168, 100);
+  background: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   color: rgb(0, 0, 0);
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 22px;
   border: 1px solid;
   border-color: rgb(0, 0, 0);
   text-align: center;
+  width: 180px;
+  height: 55px;
 }
 #main-index #boton-index a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Bitter", serif;
+}
+@media (max-width: 768px) {
+  #main-index #boton-index a {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Bitter", serif;
+  }
+}
+#main-index #boton-index a:hover {
+  color: rgb(216, 203, 203);
 }
 
 .main-sobre-mi {
-  background-color: rgb(156, 168, 100);
+  background-image: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   padding: 80px 100px 70px 0px;
 }
 .main-sobre-mi #h1-sobremi {
@@ -129,22 +155,28 @@ header .navbar .logo {
 }
 
 @media (max-width: 768px) {
-  .container-sobremi {
+  .main-sobre-mi {
+    padding: 80px 15px 70px 15px;
+  }
+  .main-sobre-mi #h1-sobremi {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
+  .main-sobre-mi .container-sobremi {
     flex-direction: column;
     gap: 40px;
   }
-  .left-section, .right-section {
+  .main-sobre-mi .container-sobremi .left-section, .main-sobre-mi .container-sobremi .right-section {
     flex: 100%;
   }
-  .right-section {
+  .main-sobre-mi .container-sobremi .right-section {
     padding: 0;
   }
-  .image {
+  .main-sobre-mi .container-sobremi .left-section .image {
     max-width: 100%;
     height: auto;
-  }
-  #h1-sobremi {
-    margin-bottom: 40px;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -153,8 +185,8 @@ header .navbar .logo {
   }
 }
 .main-infoutil {
+  background-image: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   flex-direction: column;
-  background-color: rgb(156, 168, 100);
   height: auto;
 }
 .main-infoutil .h1-infoutil {
@@ -163,7 +195,7 @@ header .navbar .logo {
   font-size: 50px;
   font-family: "Bitter", serif;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 .main-infoutil .container-infoutil {
   display: flex;
@@ -214,20 +246,32 @@ header .navbar .logo {
   color: rgb(0, 0, 0);
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
+  margin: 0 auto;
   display: inline-block;
-  padding: 5px 10px;
-  background-color: rgb(156, 168, 100);
+  padding: 15px 15px;
+  background-color: rgb(226, 220, 187);
   color: rgb(0, 0, 0);
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 22px;
   border: 2px solid;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
+  width: 190px;
+  height: 55px;
+}
+.main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado:hover {
+  color: rgb(20, 110, 88);
 }
 
 @media (max-width: 499px) {
+  .main-infoutil .h1-infoutil {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
   .main-infoutil .container-infoutil {
     justify-content: flex-start;
     align-items: center;
@@ -248,7 +292,7 @@ header .navbar .logo {
   }
 }
 #main-paginas-infoutil {
-  background-color: rgb(177, 192, 137);
+  background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
   padding: 100px 150px 100px 150px;
   box-sizing: border-box;
 }
@@ -305,6 +349,14 @@ header .navbar .logo {
   font-size: 18px;
   font-family: "Bitter", serif;
 }
+#main-paginas-infoutil .p-paginas-infoutil a {
+  color: rgb(15, 14, 14);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+#main-paginas-infoutil .p-paginas-infoutil a:hover {
+  color: rgb(197, 74, 74);
+}
 
 @media (max-width: 767px) {
   #main-paginas-infoutil {
@@ -342,9 +394,9 @@ header .navbar .logo {
   }
 }
 #main-lugares {
+  background: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   position: relative;
   z-index: 1;
-  background-color: rgb(156, 168, 100);
   padding: 70px 50px 50px 50px;
 }
 #main-lugares #h1-lugares {
@@ -362,6 +414,7 @@ header .navbar .logo {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   height: 100%;
+  overflow: hidden;
 }
 #main-lugares .grid-container #amsterdam {
   background-image: url(https://images.pexels.com/photos/2856012/pexels-photo-2856012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -398,6 +451,11 @@ header .navbar .logo {
   background-position: center;
   height: 30vh;
   width: auto;
+  transition: transform 0.5s ease;
+  border: 5px solid transparent;
+}
+#main-lugares .grid-container .grid-item:hover {
+  transform: scale(1.1);
 }
 #main-lugares .grid-container .grid-item .content {
   position: absolute;
@@ -427,6 +485,12 @@ header .navbar .logo {
     padding: 0;
     height: auto;
   }
+  #main-lugares #h1-lugares {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Bitter", serif;
+  }
   #main-lugares .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -438,7 +502,7 @@ header .navbar .logo {
   }
 }
 .main-ciudades {
-  background-color: rgb(177, 192, 137);
+  background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
   padding: 100px 150px 100px 150px;
 }
 .main-ciudades .h1-ciudades {
@@ -470,6 +534,14 @@ header .navbar .logo {
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
+}
+.main-ciudades .p-ciudades a {
+  color: rgb(15, 14, 14);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.main-ciudades .p-ciudades a:hover {
+  color: rgb(197, 74, 74);
 }
 .main-ciudades .img-ciudades {
   display: block;
@@ -576,12 +648,15 @@ header .navbar .logo {
 #main-contacto .formulario .enviar button {
   color: rgb(0, 0, 0);
   background-color: #95bd94;
-  border-radius: 5px;
+  border-radius: 22px;
   cursor: pointer;
   font-weight: 500;
   font-size: 20px;
   font-family: "Bitter", serif;
   padding: 15px 30px;
+}
+#main-contacto .formulario .enviar button:hover {
+  color: rgb(216, 203, 203);
 }
 
 @media (max-width: 767px) {

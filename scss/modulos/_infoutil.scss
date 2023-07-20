@@ -1,13 +1,13 @@
 .main-infoutil {
+    background-image: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
     @extend .flex-center;
     flex-direction: column;
-    background-color: $color-fondo;
     height: auto;
     .h1-infoutil {
         color: $color-principal;
         @include fuentes(500, 50px, $bitter);
         text-align: center;
-        margin-top: 60px
+        margin-top: 70px;
     }
     .container-infoutil {
         @include display(flex, center);
@@ -49,15 +49,21 @@
                     color: $color-principal;
                 }
                 .boton-personalizado {
+                    margin: 0 auto;
                     display: inline-block;
-                    padding: 5px 10px;
-                    background-color: $color-fondo;
+                    padding: 15px 15px;
+                    background-color: $color-fondo-boton;
                     color: $color-principal;
                     text-decoration: none;
-                    border-radius: 3px;
+                    border-radius: 22px;
                     border: 2px solid;
                     text-align: center;
                     @include fuentes(500, 18px, $bitter);
+                    width: 190px;
+                    height: 55px;
+                    &:hover {
+                        color: $color-boton-hover-infoutil
+                    }
                 }
             }
         }
@@ -65,6 +71,10 @@
 }
 @media (max-width: 499px) {
 .main-infoutil {
+    .h1-infoutil {
+        margin-bottom: 40px;
+        @include fuentes(500, 30px, $bitter);
+        }
     .container-infoutil {
         justify-content: flex-start;
         align-items: center;

@@ -1,5 +1,5 @@
 #main-paginas-infoutil {
-    background-color: $color-fondo-paginas;
+    background: linear-gradient(to top, $color-fondo-tercero, $color-fondo-cuarto);
     padding: 100px 150px 100px 150px;
     box-sizing: border-box;
     #h1-paginas-infoutil {
@@ -44,6 +44,14 @@
         text-decoration: none;
         margin: 20px 0px;
         @include fuentes(500, 18px, $bitter);
+        a {
+            color: $color-link;
+            text-decoration: underline;
+            font-weight: bolder;
+            &:hover {
+                color: rgb(197, 74, 74);
+            }
+        }
     }
 }
 @media (max-width: 767px) {

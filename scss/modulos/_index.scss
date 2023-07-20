@@ -4,30 +4,45 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     #h1-index {
         color: $color-principal;
-        background-color: $color-fondo;
+        background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
         @include fuentes(500, 50px, $bitter);
+        @media (max-width: 768px) {
+            @include fuentes(500, 30px, $bitter);
+        }
     }
     #p-index {
         color: $color-principal;
-        background-color: $color-fondo;
+        background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
         @include fuentes(400, 30px, $bitter);
+        @media (max-width: 768px) {
+            @include fuentes(400, 20px, $bitter);
+        }
     }
     #boton-index {
         display: inline-block;
         padding: 5px 10px;
-        background-color: $color-fondo;
+        background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
         color: $color-principal;
         text-decoration: none;
-        border-radius: 3px;
+        border-radius: 22px;
         border: 1px solid;
         border-color: $color-principal;
         text-align: center;
+        width: 180px;
+        height: 55px;
         a {
             text-decoration: none;
             color: $color-principal;
-            @include fuentes(400, 20px, $bitter);
+            @include fuentes(400, 18px, $bitter);
+            @media (max-width: 768px) {
+                @include fuentes(400, 14px, $bitter);
+            }
+            &:hover {
+                color: rgb(216, 203, 203);
+            }
         }
     }
 }
