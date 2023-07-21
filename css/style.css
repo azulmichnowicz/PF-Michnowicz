@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .flex-center, #main-lugares .grid-container .grid-item .content, .main-infoutil, .main-sobre-mi .container-sobremi .left-section .image, .main-sobre-mi .container-sobremi .left-section {
   display: flex;
   justify-content: center;
@@ -15,6 +16,7 @@ body {
   height: 100vh;
 }
 
+/* Estilos generales para Header */
 header {
   height: 15vh;
 }
@@ -38,6 +40,7 @@ header .navbar .logo {
   }
 }
 
+/* Estilos generales para página Index */
 #main-index {
   height: 75vh;
   background-image: url(https://images2.alphacoders.com/711/711694.jpg);
@@ -96,14 +99,21 @@ header .navbar .logo {
 @media (max-width: 768px) {
   #main-index #boton-index a {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Bitter", serif;
   }
 }
 #main-index #boton-index a:hover {
   color: rgb(216, 203, 203);
 }
+@media (max-width: 768px) {
+  #main-index #boton-index {
+    width: 120px;
+    height: 40px;
+  }
+}
 
+/* Estilos generales para página Sobre Mí */
 .main-sobre-mi {
   background-image: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   padding: 80px 100px 70px 0px;
@@ -184,6 +194,7 @@ header .navbar .logo {
     max-width: 100%;
   }
 }
+/* Estilos generales para página Info Útil */
 .main-infoutil {
   background-image: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   flex-direction: column;
@@ -291,6 +302,7 @@ header .navbar .logo {
     font-family: "Bitter", serif;
   }
 }
+/* Estilos generales para páginas Info Útil */
 #main-paginas-infoutil {
   background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
   padding: 100px 150px 100px 150px;
@@ -393,6 +405,7 @@ header .navbar .logo {
     padding: 20px;
   }
 }
+/* Estilos generales para página Lugares */
 #main-lugares {
   background: linear-gradient(to top, rgb(143, 126, 69), rgb(165, 152, 110));
   position: relative;
@@ -501,6 +514,7 @@ header .navbar .logo {
     width: 100%;
   }
 }
+/* Estilos generales para páginas Lugares */
 .main-ciudades {
   background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
   padding: 100px 150px 100px 150px;
@@ -587,6 +601,7 @@ header .navbar .logo {
     font-family: "Bitter", serif;
   }
 }
+/* Estilos generales para página Contacto */
 #main-contacto {
   padding: 20px 20px 80px 20px;
   display: grid;
@@ -669,6 +684,7 @@ header .navbar .logo {
     padding: 10px;
   }
 }
+/* Estilos generales para Footer */
 footer {
   height: 10vh;
   background-color: rgb(179, 165, 149);
