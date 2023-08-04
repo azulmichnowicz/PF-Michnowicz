@@ -17,6 +17,7 @@
         flex-wrap: wrap;
         padding-bottom: 90px;
         .tarjeta-infoutil {
+            background-color: rgb(34, 78, 78);
             border-radius: 5px;
             margin: 40px;
             padding: 20px;
@@ -63,7 +64,7 @@
                     width: 190px;
                     height: 55px;
                     &:hover {
-                        color: $color-boton-hover-infoutil
+                        color: rgb(151, 46, 46);
                     }
                 }
             }
