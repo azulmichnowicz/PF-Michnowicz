@@ -1,6 +1,6 @@
 /* Estilos generales para páginas Lugares */
 .main-ciudades {
-    background: linear-gradient(to top, $color-fondo-tercero, $color-fondo-cuarto);
+    background: $color-fondo-paginas-lugares;
     padding: 100px 150px 100px 150px;
     .h1-ciudades {
         color: rgb(0, 0, 0);
@@ -26,11 +26,11 @@
         text-align: justify;
         @include fuentes(500, 18px, $bitter);
         a {
-            color: $color-link;
+            color: $color-fondo-principal;
             text-decoration: underline;
             font-weight: bolder;
             &:hover {
-                color: rgb(197, 74, 74);
+                color: $color-hover;
             }
         }
     }

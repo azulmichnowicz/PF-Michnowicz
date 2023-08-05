@@ -25,7 +25,7 @@
             display: grid;
             gap: 5px;
             label {
-                background-color: $color-fondo-contacto;
+                background-color: $color-fondo-principal;
                 color: $color-principal;
                 @include fuentes(500, 20px, $bitter);
             }
@@ -47,13 +47,13 @@
             @include display(flex, center);
             button {
                 color: $color-principal;
-                background-color: $color-fondo-contacto;
+                background-color: $color-fondo-principal;
                 border-radius: 22px;
                 cursor: pointer;
                 @include fuentes(500, 20px, $bitter);
                 padding: 15px 30px;
                 &:hover {
-                    color: rgb(216, 203, 203);
+                    color: $color-hover;
                 }
             }
         }

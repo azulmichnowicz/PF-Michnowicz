@@ -7,7 +7,7 @@
     background-size: cover;
     #h1-index {
         color: $color-principal;
-        background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
+        background: $color-fondo-texto;
         @include fuentes(500, 50px, $bitter);
         @media (max-width: 768px) {
             @include fuentes(500, 30px, $bitter);
@@ -15,7 +15,7 @@
     }
     #p-index {
         color: $color-principal;
-        background: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
+        background: $color-fondo-texto;
         @include fuentes(500, 30px, $bitter);
         @media (max-width: 768px) {
             @include fuentes(500, 20px, $bitter);
@@ -24,7 +24,7 @@
     #boton-index {
         display: inline-block;
         padding: 5px 10px;
-        background: $color-fondo-boton-index;
+        background: $color-fondo-texto;
         color: $color-principal;
         text-decoration: none;
         border-radius: 22px;
@@ -41,7 +41,7 @@
                 @include fuentes(500, 12px, $bitter);
             }
             &:hover {
-                color: rgb(151, 46, 46);
+                color: rgb(75, 84, 59);
             }
         }
         @media (max-width: 768px) {

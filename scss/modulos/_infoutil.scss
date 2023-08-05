@@ -1,6 +1,6 @@
 /* Estilos generales para página Info Útil */
 .main-infoutil {
-    background-image: linear-gradient(to top, $color-fondo-primero, $color-fondo-segundo);
+    background-color: $color-fondo-principal;
     @extend .flex-center;
     flex-direction: column;
     height: auto;
@@ -17,13 +17,13 @@
         flex-wrap: wrap;
         padding-bottom: 90px;
         .tarjeta-infoutil {
-            background-color: rgb(34, 78, 78);
+            background-color: $color-fondo-tarjetas;
             border-radius: 5px;
             margin: 40px;
             padding: 20px;
             display: flex;
             flex-direction: column;
-            border: 2px solid $color-principal;
+            border: 2px solid $color-fondo-tarjetas;
             flex: 1 0 calc(45% - 40px);
             align-self: stretch;
             .tarjeta-img {
@@ -40,7 +40,7 @@
                 @include display(flex, space-between);
                 .h2-tarjeta {
                     text-align: center;
-                    color: $color-principal;
+                    color: white;
                     @include fuentes(400, 22px, $bitter);
                     font-weight: bold;
                 }
@@ -48,14 +48,14 @@
                     margin-bottom: 10px;
                     text-align: justify;
                     @include fuentes(500, 18px, $bitter);
-                    color: $color-principal;
+                    color: white;
                 }
                 .boton-personalizado {
                     margin: 0 auto;
                     display: inline-block;
                     padding: 15px 15px;
-                    background-color: $color-fondo-boton;
-                    color: $color-principal;
+                    background-color: $color-fondo-principal;
+                    color: $color-fondo-tarjetas;
                     text-decoration: none;
                     border-radius: 22px;
                     border: 2px solid;
@@ -64,7 +64,7 @@
                     width: 190px;
                     height: 55px;
                     &:hover {
-                        color: rgb(151, 46, 46);
+                        color: $color-hover;
                     }
                 }
             }

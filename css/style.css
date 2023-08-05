@@ -50,7 +50,7 @@ header .navbar .logo {
 }
 #main-index #h1-index {
   color: rgb(0, 0, 0);
-  background: linear-gradient(to top, rgba(212, 205, 180, 0.589), rgba(199, 196, 185, 0.685));
+  background: rgba(220, 226, 170, 0.726);
   font-weight: 500;
   font-size: 50px;
   font-family: "Bitter", serif;
@@ -64,7 +64,7 @@ header .navbar .logo {
 }
 #main-index #p-index {
   color: rgb(0, 0, 0);
-  background: linear-gradient(to top, rgba(212, 205, 180, 0.589), rgba(199, 196, 185, 0.685));
+  background: rgba(220, 226, 170, 0.726);
   font-weight: 500;
   font-size: 30px;
   font-family: "Bitter", serif;
@@ -79,7 +79,7 @@ header .navbar .logo {
 #main-index #boton-index {
   display: inline-block;
   padding: 5px 10px;
-  background: rgba(212, 205, 180, 0.719);
+  background: rgba(220, 226, 170, 0.726);
   color: rgb(0, 0, 0);
   text-decoration: none;
   border-radius: 22px;
@@ -104,7 +104,7 @@ header .navbar .logo {
   }
 }
 #main-index #boton-index a:hover {
-  color: rgb(151, 46, 46);
+  color: rgb(75, 84, 59);
 }
 @media (max-width: 768px) {
   #main-index #boton-index {
@@ -115,7 +115,7 @@ header .navbar .logo {
 
 /* Estilos generales para página Sobre Mí */
 .main-sobre-mi {
-  background-image: linear-gradient(to top, rgba(212, 205, 180, 0.589), rgba(199, 196, 185, 0.685));
+  background-color: rgb(220, 226, 170);
   padding: 80px 100px 70px 0px;
 }
 .main-sobre-mi #h1-sobremi {
@@ -196,7 +196,7 @@ header .navbar .logo {
 }
 /* Estilos generales para página Info Útil */
 .main-infoutil {
-  background-image: linear-gradient(to top, rgba(212, 205, 180, 0.589), rgba(199, 196, 185, 0.685));
+  background-color: rgb(220, 226, 170);
   flex-direction: column;
   height: auto;
 }
@@ -217,13 +217,13 @@ header .navbar .logo {
   padding-bottom: 90px;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil {
-  background-color: rgb(34, 78, 78);
+  background-color: rgb(181, 127, 80);
   border-radius: 5px;
   margin: 40px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(181, 127, 80);
   flex: 1 0 calc(45% - 40px);
   align-self: stretch;
 }
@@ -243,7 +243,7 @@ header .navbar .logo {
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .h2-tarjeta {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: white;
   font-weight: 400;
   font-size: 22px;
   font-family: "Bitter", serif;
@@ -255,14 +255,14 @@ header .navbar .logo {
   font-weight: 500;
   font-size: 18px;
   font-family: "Bitter", serif;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado {
   margin: 0 auto;
   display: inline-block;
   padding: 15px 15px;
-  background-color: rgb(226, 220, 187);
-  color: rgb(0, 0, 0);
+  background-color: rgb(220, 226, 170);
+  color: rgb(181, 127, 80);
   text-decoration: none;
   border-radius: 22px;
   border: 2px solid;
@@ -274,7 +274,7 @@ header .navbar .logo {
   height: 55px;
 }
 .main-infoutil .container-infoutil .tarjeta-infoutil .tarjeta-principal .boton-personalizado:hover {
-  color: rgb(151, 46, 46);
+  color: rgb(75, 84, 59);
 }
 
 @media (max-width: 499px) {
@@ -305,7 +305,7 @@ header .navbar .logo {
 }
 /* Estilos generales para páginas Info Útil */
 #main-paginas-infoutil {
-  background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
+  background-color: rgb(181, 127, 80);
   padding: 100px 150px 100px 150px;
   box-sizing: border-box;
 }
@@ -363,12 +363,12 @@ header .navbar .logo {
   font-family: "Bitter", serif;
 }
 #main-paginas-infoutil .p-paginas-infoutil a {
-  color: rgb(15, 14, 14);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
   font-weight: bolder;
 }
 #main-paginas-infoutil .p-paginas-infoutil a:hover {
-  color: rgb(197, 74, 74);
+  color: rgb(75, 84, 59);
 }
 
 @media (max-width: 767px) {
@@ -408,7 +408,7 @@ header .navbar .logo {
 }
 /* Estilos generales para página Lugares */
 #main-lugares {
-  background: linear-gradient(to top, rgba(212, 205, 180, 0.589), rgba(199, 196, 185, 0.685));
+  background-color: rgb(220, 226, 170);
   position: relative;
   z-index: 1;
   padding: 70px 50px 50px 50px;
@@ -517,7 +517,7 @@ header .navbar .logo {
 }
 /* Estilos generales para páginas Lugares */
 .main-ciudades {
-  background: linear-gradient(to top, rgb(113, 134, 118), rgb(189, 219, 193));
+  background: rgb(114, 131, 84);
   padding: 100px 150px 100px 150px;
 }
 .main-ciudades .h1-ciudades {
@@ -551,12 +551,12 @@ header .navbar .logo {
   font-family: "Bitter", serif;
 }
 .main-ciudades .p-ciudades a {
-  color: rgb(15, 14, 14);
+  color: rgb(220, 226, 170);
   text-decoration: underline;
   font-weight: bolder;
 }
 .main-ciudades .p-ciudades a:hover {
-  color: rgb(197, 74, 74);
+  color: rgb(75, 84, 59);
 }
 .main-ciudades .img-ciudades {
   display: block;
@@ -636,7 +636,7 @@ header .navbar .logo {
   gap: 5px;
 }
 #main-contacto .formulario .categoria-formulario label {
-  background-color: #95bd94;
+  background-color: rgb(220, 226, 170);
   color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 20px;
@@ -663,7 +663,7 @@ header .navbar .logo {
 }
 #main-contacto .formulario .enviar button {
   color: rgb(0, 0, 0);
-  background-color: #95bd94;
+  background-color: rgb(220, 226, 170);
   border-radius: 22px;
   cursor: pointer;
   font-weight: 500;
@@ -672,7 +672,7 @@ header .navbar .logo {
   padding: 15px 30px;
 }
 #main-contacto .formulario .enviar button:hover {
-  color: rgb(216, 203, 203);
+  color: rgb(75, 84, 59);
 }
 
 @media (max-width: 767px) {
